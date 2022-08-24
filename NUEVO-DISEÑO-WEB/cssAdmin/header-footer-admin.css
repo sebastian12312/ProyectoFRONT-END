@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*header  dashboard*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header_admin_1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header_admin_2 {
+    display: flex;
+}
+
+.header_admin_2 div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contenedor_reportes_admin {
+    display: flex;
+}
+
+.contenedor_reportes_admin a,
+li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: black;
+}
