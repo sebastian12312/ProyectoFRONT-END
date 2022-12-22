@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.dashboard_administrador{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion_menu_lateral_administrador{
+    width: 400px;  
+    height: 100vh;
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0 80px 10px 10px rgba(79, 79, 79, 0.2) ;
+}
+.titulo_menu_lateral_administrador {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.titulo_menu_lateral_administrador a{
+    text-decoration:none;
+    color: rgb(33, 33, 33);
+    font-size: 40px;
+}
+
+
+.contenedor_body_menu_lateral_administrador a{
+    text-decoration: none;
+    display: block;  
+    background-color: rgb(0, 149, 204);
+    font-size:22px ;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    border-radius:4px ;
+}
+.contenedor_body_menu_lateral_administrador a:hover{
+    background-color: rgb(0, 81, 110);
+    transition: 0.5s;
+}
+.contenedor_body_menu_lateral_administrador a:nth-child(7){
+    background-color: rgb(255, 0, 0);    
+}
+.contenedor_body_menu_lateral_administrador a:nth-child(7):hover{
+    background-color: rgb(105, 0, 0);    
+    transition: 0.5s;
+}
+.opcion_menu li{
+    float: right;    
+}
+/**/
+.seccion_menu_top_administrador {
+    width: 110%;
+    border-bottom: 1px solid #ddd;    
+    z-index: -1;
+ }
+.contenedor_header_top_menu_administrador{
+    background-color: rgb(227, 227, 227);
+    padding-top:15px;
+    padding-bottom:15px ;
+   
+    box-shadow: 0 10px 10px rgba(79, 79, 79, 0.2) ;
+}
+.header_top_administrador{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+.derecha_header_top_administrador{
+    display: flex;
+    
+}
+.derecha_header_top_administrador div{
+    margin: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.derecha_header_top_barra a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    
+}
+.derecha_header_top_titulo a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.izquierda_header_top_administrador{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.izquierda_header_top_administrador div{
+    margin-left: 20px;
+}
+
+.datos_administrador{
+    background-color: blue;
+    color: white;
+    text-align: none;
+    padding: 10px 20px;
+    border-radius:4px ;
+    font-size: 22px;
+    
+}
+.opciones_administrador_Drop{
+
+}
+.dropwtop_administrador
+{
+position: absolute;
+background-color: red;
+width: 170px;
+align-items: center;
+
+}
+.dropwtop_administrador a{
+    display: block;    
+
+}
+/**/
+.opcion_buscar_administrador{
+    display: flex;
+}
+.buscador_admin input{
+    width: 100%;
+    outline: none;
+}
