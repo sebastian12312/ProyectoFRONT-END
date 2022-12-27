@@ -1,139 +1,232 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.dashboard_administrador{
+
+.contenedor_header_administrador_1 {
     display: flex;
+    background-color: rgb(253, 253, 253);
     justify-content: space-between;
-}
-.seccion_menu_lateral_administrador{
-    width: 400px;  
-    height: 100vh;
-    background-color: rgb(227, 227, 227);
-    box-shadow: 0 80px 10px 10px rgba(79, 79, 79, 0.2) ;
-}
-.titulo_menu_lateral_administrador {
-    text-align: center;
-    font-weight: lighter;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-.titulo_menu_lateral_administrador a{
-    text-decoration:none;
-    color: rgb(33, 33, 33);
-    font-size: 40px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    box-shadow: 0px 0px 10px 0px rgb(161, 161, 161);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-
-.contenedor_body_menu_lateral_administrador a{
-    text-decoration: none;
-    display: block;  
-    background-color: rgb(0, 149, 204);
-    font-size:22px ;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    color: white;
-    border-radius:4px ;
-}
-.contenedor_body_menu_lateral_administrador a:hover{
-    background-color: rgb(0, 81, 110);
-    transition: 0.5s;
-}
-.contenedor_body_menu_lateral_administrador a:nth-child(7){
-    background-color: rgb(255, 0, 0);    
-}
-.contenedor_body_menu_lateral_administrador a:nth-child(7):hover{
-    background-color: rgb(105, 0, 0);    
-    transition: 0.5s;
-}
-.opcion_menu li{
-    float: right;    
-}
-/**/
-.seccion_menu_top_administrador {
-    width: 110%;
-    border-bottom: 1px solid #ddd;    
-    z-index: -1;
- }
-.contenedor_header_top_menu_administrador{
-    background-color: rgb(227, 227, 227);
-    padding-top:15px;
-    padding-bottom:15px ;
-   
-    box-shadow: 0 10px 10px rgba(79, 79, 79, 0.2) ;
-}
-.header_top_administrador{
+.header_administrador_1 {
     display: flex;
-    justify-content: space-between;
     margin-left: 3%;
-    margin-right: 3%;
-    
-}
-.derecha_header_top_administrador{
-    display: flex;
-    
-}
-.derecha_header_top_administrador div{
-    margin: 10px;
     margin-top: auto;
     margin-bottom: auto;
+    gap: 20px;
 }
-.derecha_header_top_barra a{
+
+.barra_header_administrador a {
     text-decoration: none;
-    color: black;
-    font-size: 22px;
-    
-}
-.derecha_header_top_titulo a{
-    text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
-.izquierda_header_top_administrador{
+
+.titulo_header_administrador a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_administrador_2 {
+    margin-right: 3%;
     display: flex;
+    gap: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
-.izquierda_header_top_administrador div{
-    margin-left: 20px;
+
+.droptown_menu_header {
+    position: relative;
+    width: 170px;
+
 }
 
-.datos_administrador{
-    background-color: blue;
-    color: white;
-    text-align: none;
-    padding: 10px 20px;
-    border-radius:4px ;
+.menu_header_administrador a {
+    color: rgb(132, 132, 132);
+    border: 1px solid rgb(132, 132, 132);
+    border-radius: 50%;
     font-size: 22px;
-    
+    padding: 10px 15px;
 }
-.opciones_administrador_Drop{
 
+.menu_header_administrador a:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(67, 67, 67);
+    background-color: rgb(67, 67, 67);
+    transition: 0.5s;
 }
-.dropwtop_administrador
-{
-position: absolute;
-background-color: red;
-width: 170px;
-align-items: center;
 
+.btn_dropwtown_header_admin {
+    text-decoration: none;
+    color: white;
+    background-color: #0088ff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 3px;
 }
-.dropwtop_administrador a{
-    display: block;    
 
+.droptown_menu_header {
+    position: relative;
+    display: inline-block;
 }
+
+.menu_droptown_administrador {
+    display: none;
+    position: absolute;
+    background-color: #1294ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.menu_droptown_administrador a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 170px;
+}
+
+.menu_droptown_administrador a:hover {
+    background-color: rgb(17, 53, 255);
+}
+
+.droptown_menu_header:hover .menu_droptown_administrador {
+    display: block;
+}
+
+.droptown_menu_header:hover .btn_dropwtown_header_admin {
+    background-color: #005ad7;
+}
+
 /**/
-.opcion_buscar_administrador{
-    display: flex;
+.barra_lateral_header_admin {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-.buscador_admin input{
-    width: 100%;
-    outline: none;
+
+.barra_lateral_header_admin a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.opciones_menu_barra_lateral a {
+    background-color: rgb(0, 166, 255);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+.opciones_menu_barra_lateral a:nth-child(6) {
+    background-color: red;
+}
+
+.barra_lateral_header_admin a:hover {
+    color: #f1f1f1;
+}
+
+.barra_lateral_header_admin .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#header_administrador {
+    transition: margin-left .5s;
+
+}
+/*BODY ADMINISTRADOR*/
+.table_administrador{
+ border-collapse: collapse;
+ text-align: center;
+}
+
+.table_administrador td{
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px;
+}
+.table_administrador a{
+    color: white;
+    background-color: #005ad7;
+    font-size: 1.5rem;
+   padding: 5px 18px;
+   border-radius: 4px;
+}
+.add_accion_table_administrador{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add_accion_table_administrador a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+   
+}
+.body_administrador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 950px) {
+    .header_administrador_2 {
+        display: block;
+    }
+
+    .droptown_menu_header {
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor_header_administrador_1 {
+        flex-wrap: wrap;
+
+    }
+
+    .header_administrador_2 {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .barra_lateral_header_admin {
+        padding-top: 15px;
+    }
+
+    .barra_lateral_header_admin a {
+        font-size: 18px;
+    }
+
 }
