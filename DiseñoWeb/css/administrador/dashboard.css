@@ -1,0 +1,51 @@
+.dashboard_administrador_tables {
+   display: flex;
+   justify-content: center;
+}
+.table_administrador{
+    border-collapse: collapse;    
+    max-width: 1500px;
+    text-align: center;    
+}
+.table_administrador th{
+    font-size: 1.1rem;
+    border-bottom: 3px solid rgb(45, 45, 45);
+   padding: 20px 20px;
+   box-sizing: border-box;
+}
+.table_administrador td{
+    font-size: 1.1rem;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.accion_table{
+    display: flex;
+    flex-wrap: wrap;
+}
+.accion_table a{
+    margin: 5px;
+}
+.accion_table a:nth-child(1){
+    color: white;
+    background-color: rgb(45, 147, 237);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.accion_table a:nth-child(2){
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+@media (max-width:1050px){
+    .table_administrador{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .contenedor_table_administrador{
+        overflow-y: auto;
+
+    }
+}

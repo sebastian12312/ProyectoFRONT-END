@@ -5,164 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/dashboardAdmin.css">
+    <title>DashBoard Administrador</title>
     <link rel="stylesheet" href="css/fuente.css">
-    <link rel="stylesheet" href="css/modalUsuario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/administrador/dashboard.css">
+    <link rel="stylesheet" href="css/administrador/header_footer_administrador.css">
 </head>
 
 <body>
-
-    <div class="header_administrador" id="header_administrador">
-        <div class="contenedor_header_administrador_1">
+    <header class="header_administrador">
+        <div class="contenedor_header_administrador">
             <div class="header_administrador_1">
-                <div class="barra_header_administrador">
-                    <a onclick="openNav()">
-                        <li class="fa fa-angle-left"></li>
+                <div class="barra_lateral_header">
+                    <a id="OpenModalAdministrador" class="Open">
+                        <li class="fa fa-angle-right"></li>
                     </a>
                 </div>
                 <div class="titulo_header_administrador">
-                    <a href="#">TITULO DASHBOARD</a>
+                    <a href="#">Dashboard</a>
                 </div>
             </div>
-            <div class="header_administrador_2">
-                <div class="menu_header_administrador">
-                    <a href="#">
-                        <li class="fa fa-comment-o"></li>
-                    </a>
-                    <a href="#">
-                        <li class="fa fa-cog"></li>
-                    </a>
-                    <a href="#">
-                        <li class="fa fa-bell-o"></li>
-                    </a>
-                </div>
-                <div class="droptown_menu_header">
-                    <a href="#" class="btn_dropwtown_header_admin" id="NombreUsuario">SEBASTIAN8026</a>
-                    <div class="menu_droptown_administrador">
-                        <a href="#">OPCIONES</a>
-                        <a href="#">OPCIONES</a>
-                        <a href="#">OPCIONES</a>
-                        <a href="#">OPCIONES</a>
-                    </div>
+            <div class="header_administrador_2">                
+                <div class="datos_administrador_header">
+                    <a href="#">SEBASTIAN8026</a>
                 </div>
             </div>
         </div>
-        <div>
-            <main class="body_administrador">
-                <div class="">
-                    <h1>usuario</h1>
-                    <div class="add_accion_table_administrador">
-                        <a id="AbrirVentanaLogin" class="">Agregar Usuario</a>
-                    </div>
+    </header>
 
-                    <table class="table_administrador">
-                        <tr>
-                            <td>#</td>
-                            <td>NickName</td>
-                            <td>Nombre</td>
-                            <td>Apellido</td>
-                            <td>telefono</td>
-                            <td>correo</td>
-                            <td>password</td>
-                            <td>Genero</td>
-                            <td>Fecha Nacimiento</td>
-                            <td>Ver Detalles</td>
-                        </tr>
-                        <tr>
-                            <td>#</td>
-                            <td>NickName</td>
-                            <td>Nombre</td>
-                            <td>Apellido</td>
-                            <td>telefono</td>
-                            <td>correo</td>
-                            <td>password</td>
-                            <td>Genero</td>
-                            <td>Fecha Nacimiento</td>
-                            <td>
-                                <a href="#">
-                                    <li class="fa fa-edit"></li>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </main>
+    <div class="barra_lateral_administrador close" id="barra_lateral_administrador">
+        <div class="barra_lateral_header_cerrar">
+            <a id="CloseModalAdministrador"><li class="fa fa-angle-left"></li></a>
+        </div>       
+        <div class="titulo_administrador_barra_lateral">
+            <a>Diseno web</a>
         </div>
-
-    </div>
-
-    <div id="barra_lateral_header_admin" class="barra_lateral_header_admin">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <li class="fa fa-angle-right"></li>
-        </a>
-        <div class="opciones_menu_barra_lateral">
-            <a href="#">dashboard</a>
-            <a href="#">usuarios</a>
-            <a href="#">productos</a>
-            <a href="#">reportes</a>
-            <a href="#">mensajes</a>
-            <a href="#">loguout</a>
+        <div class="menu_administrador_lateral">
+            <a href="#" class="opcion_menu_administrador">
+                <span>DashBoard</span>
+                <span><li class="fa fa-edit"></li></span>
+            </a>
+            <a href="#" class="opcion_menu_administrador">
+                <span>usuarios</span>
+                <span><li class="fa fa-user"></li></span>
+            </a>
+            <a href="#" class="opcion_menu_administrador">
+                <span>DashBoard</span>
+                <span><li class="fa fa-facebook"></li></span>
+            </a>
+            <a href="#" class="opcion_menu_administrador">
+                <span>Tienda</span>
+                <span><li class="fa fa-shopping-cart"></li></span>
+            </a>
+            <a href="#" class="opcion_menu_administrador">
+                <span>cerrar session</span>
+                <span><li class="fa fa-sign-out"></li></span>
+            </a>
         </div>
     </div>
-  
-    <!-- modal -->
-    <div class="contenedor_modal" id="contenedor_modal_login">
-        <form action="" class="formulario_login">
-            <h1>REGISTRATE</h1>
-            <div class="contenedor_datos_register">
-                <div class="datos_register">
-                    <label for="">usuario*:</label>
-                    <input type="text">
+    <div class="dashboard_administrador_tables">
+        <div class="">
+            <div class="opciones_table">
+                <div>
+                    <a href="#">Registrar</a>
                 </div>
-                <div class="datos_register">
-                    <label for="">E-mail*:</label>
-                    <input type="text">
+                <div>
+                    <form action="">
+                        <input type="search">
+                        <input type="submit">
+                    </form>
                 </div>
-            </div>
-            <div class="contenedor_datos_register">
-                <div class="datos_register">
-                    <label for="">Nombre*:</label>
-                    <input type="text">
-                </div>
-                <div class="datos_register">
-                    <label for="">Apellido*:</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="contenedor_datos_register">
-                <div class="datos_register">
-                    <label for="">contrasena*:</label>
-                    <input type="text">
-                </div>
-                <div class="datos_register">
-                    <label for="">Repetia su contrasena*:</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="contenedor_datos_register">
-                <div class="datos_register">
-                    <label for="">Genero*:</label>
-                    <select name="" id="">
-                        <option value="MASCULINO">MASCULINO</option>
-                        <option value="FEMENINO">FEMENINO</option>
-                    </select>
-                </div>
-                <div class="datos_register">
-                    <label for="">Fecha de Nacimiento*:</label>
-                    <input type="date">
-                </div>
-            </div>
-            <div class="btn_login" id="btn_login">
-                <input type="submit" value="Registrar">
-                <a id="CerrarVentanaLogin">cerrar ventana</a>
-            </div>
-        </form>
+            </div>    
+            <div class="contenedor_table_administrador">       
+                <table class="table_administrador">
+                    <tr>
+                        <th>#</th>
+                        <th>Codigo Compras</th>
+                        <th>Codigo Usuario</th>
+                        <th>sub total</td>
+                        <th>DescuentoCompra</th>
+                        <th>IGV</th>
+                        <th>Precio total</th>
+                        <th>Fecha Compra</th>
+                        <th>Estado Compra</th>
+                        <th>accion</th>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td>Codigo Compras</td>
+                        <td>Codigo Usuario</td>
+                        <td>123145</td>
+                        <td>DescuentoCompra</td>
+                        <td>IGV</td>
+                        <td>Precio total</td>
+                        <td>Fecha Compra</td>
+                        <td>Estado Compra</td>
+                        <td class="accion_table">
+                            <a href="#"><li class="fa fa-edit"></li></a>
+                            <a href="#"><li class="fa fa-trash"></li></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td>Codigo Compras</td>
+                        <td>Codigo Usuario</td>
+                        <td>sub total</td>
+                        <td>DescuentoCompra</td>
+                        <td>IGV</td>
+                        <td>Precio total</td>
+                        <td>Fecha Compra</td>
+                        <td>Estado Compra</td>
+                        <td class="accion_table">
+                            <a href="#"><li class="fa fa-edit"></li></a>
+                            <a href="#"><li class="fa fa-trash"></li></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>   
+        </div>       
     </div>
-    <script src="js/modal.js"></script>
-    <script src="js/administrador.js"></script>
-    <script src="js/header.js"></script>
+   
+    <script src="js/administrador/modalAdministrador.js"></script>
 </body>
 
 </html>
