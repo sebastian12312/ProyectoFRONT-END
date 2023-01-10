@@ -3,11 +3,9 @@
     top: 20px;
     right: 20px;
     animation: animacionAlert 1s;
-    display: none ;
+  
 }
-.respuesta-modal{
-    display: block !important;
-}
+
 @keyframes animacionAlert {
     from{
         top: -100px;
