@@ -1,0 +1,29 @@
+
+:root{
+    /*color dark*/
+    --background-body-dark:#121619;
+    --background-color-1-dark:#1a2126;
+    --color-letra-dark: #ffff;
+    --header-background-color-dark:#192229;   
+    --background-color-acceso-usuario-dark:#293742;
+    --color-letra-login-dark:rgba(14, 14, 14, 0.867);
+    --background-login-color-dark: #192229;
+    --background-login-input-dark:#212d36;
+    --background-login-buttom-dark:#10161a;
+    --background-login-buttom-dark-hover:#0a0c0e;  
+    --background-register-color-dark:#121619;
+    /*color buttom*/
+    --color-buttom-2:#f68503;
+    --color-buttom-3: red;
+    --color-buttom-4: rgb(0, 0, 0);
+    --color-buttom-5:rgb(0, 181, 27);
+    --color-buttom-6:rgb(78, 78, 78);
+    /*color ligh*/
+    --background-color-light: #ffff;
+    --color-letra-light: rgb(16, 16, 16);
+    --color-acceso-usuario-light:#fbfbfb;
+    --background-color-acceso-usuario-light:#002884;
+
+
+    /*color-adminitrador*/
+}

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*contenedor_login_administrador*/
+.contenedor_login_administrador{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(212, 212, 212);
+    width: 450px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-radius:10px ;
+}
+/*formulario_login_administrador*/
+.formulario_login_administrador{
+   padding-left: 1%;
+   padding-right: 1%;
+}
+.formulario_login_administrador h1{
+    color: rgb(31, 31, 31);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+.datos_administrador_login{
+    margin-bottom: 20px;
+}
+.datos_administrador_login label{
+    display: block;
+    font-size: 1.3rem;
+}
+.datos_administrador_login input{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    font-size:1.0rem ;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 5px 10px;
+}   
+.btn_login_admin{
+    text-align: center;
+}
+.btn_login_admin input{
+    color: white;
+    font-size:1.2rem;
+    background-color: #10A37f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+@media  (max-width: 450px) {
+    .contenedor_login_administrador{
+        width: 98%;
+    }
+}
