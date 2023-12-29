@@ -21,9 +21,9 @@
 }
 thead td{
     padding: 10px;
-    background-color: #624DFA;
+    background-color: #7066e0;
     color: white;
-    border: 1px solid #624DFA;
+    border: 1px solid #7066e0;
 }
 tbody td{
     padding: 10px;
@@ -44,19 +44,27 @@ tbody tr:hover{
     border-radius:3px ;
 }
 .btn-accion-table a:nth-child(1){
-    background-color: rgb(43, 109, 208);
+    background-color: #36ABFF;
     color: white;
+    cursor: pointer;
 }
 .btn-accion-table a:nth-child(2){
-    background-color: rgb(0, 0, 0);
+    background-color: #42bf27;
     color: white;
+    cursor: pointer;
 }
 .btn-accion-table a:nth-child(3){
-   background-color: #dc3545;
+   background-color: #FF4754;
    color: white;
+   cursor: pointer;
 }
 .btn-accion-table a:nth-child(4){
-    background-color: green;
+    background-color: #FFAC38;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+ }
+ .btn-accion-table:hover{
     color: white;
  }
  .btn-agregar{
@@ -66,18 +74,19 @@ tbody tr:hover{
     cursor: pointer;
  }
  .btn-agregar a{
-    background-color: #624DFA;
+    background-color: #7066e0;
     font-size: 0.9rem;
-    padding: 5px 12px;
+    padding: 10px 12px;
     border-radius:3px ;
+   
  }
+
   .btn-buscar div{
-    border: 1px solid #624DFA;
+    border: 1px solid #7066e0;
     border-radius: 3px;
   }
  .btn-buscar input{
     outline: none;
-  
     border: none;
     font-size: 0.9rem;
     padding: 0px 10px;
@@ -85,8 +94,7 @@ tbody tr:hover{
  }
  .btn-buscar button{
     border: none;
-    background-color: #624DFA;
+    background-color: #7066e0;
     padding: 5px 12px;
-  
     color: white;
  }
