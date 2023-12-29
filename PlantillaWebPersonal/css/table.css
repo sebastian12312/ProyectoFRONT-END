@@ -1,0 +1,92 @@
+.componente-tables{
+    width: 1000px;
+    max-width: 1000px;
+}
+.contenedor-btn-table {   
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.contenedor-btn-table div{
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+.tabla{
+    width: 1000px;
+    max-width: 1000px;
+    padding: 10px;
+    text-align: center;
+    border-collapse:collapse;border-spacing:0
+}
+thead td{
+    padding: 10px;
+    background-color: #624DFA;
+    color: white;
+    border: 1px solid #624DFA;
+}
+tbody td{
+    padding: 10px;
+    border: 1px solid rgb(172, 172, 172);
+}
+tbody tr:hover{
+ background-color: rgb(200, 200, 200);
+}
+.table{
+    border: 1px solid rgb(188, 188, 188);
+}
+
+
+/* botones table */
+.btn-accion-table a{ 
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    border-radius:3px ;
+}
+.btn-accion-table a:nth-child(1){
+    background-color: rgb(43, 109, 208);
+    color: white;
+}
+.btn-accion-table a:nth-child(2){
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.btn-accion-table a:nth-child(3){
+   background-color: #dc3545;
+   color: white;
+}
+.btn-accion-table a:nth-child(4){
+    background-color: green;
+    color: white;
+ }
+ .btn-agregar{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+ }
+ .btn-agregar a{
+    background-color: #624DFA;
+    font-size: 0.9rem;
+    padding: 5px 12px;
+    border-radius:3px ;
+ }
+  .btn-buscar div{
+    border: 1px solid #624DFA;
+    border-radius: 3px;
+  }
+ .btn-buscar input{
+    outline: none;
+  
+    border: none;
+    font-size: 0.9rem;
+    padding: 0px 10px;
+    color: rgb(13, 13, 13);
+ }
+ .btn-buscar button{
+    border: none;
+    background-color: #624DFA;
+    padding: 5px 12px;
+  
+    color: white;
+ }
