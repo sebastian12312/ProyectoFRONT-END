@@ -1,12 +1,10 @@
-body{
-    background: #f4e5ff;
-}
-.contenedor-table-general{
-    border: 1px solid #7066e0;
-    box-shadow: 0px 0px 10px 0px #7066e0;
-    background: white;
+
+.contenedor-table-general{        
     padding: 40px 20px;
     border-radius: 4px;
+}
+.contenedor-table{
+    overflow-y: auto;
 }
 .contenedor-btn-table {   
    display: flex;
@@ -32,9 +30,10 @@ body{
 }
 thead td{
     padding: 10px;
-    background-color: #7066e0;
+    background-color: #3B9AFF;
     color: white;
-    border: 1px solid #7066e0;
+    border: 1px solid #3B9AFF
+    ;
 }
 tbody td{
     padding: 10px;
@@ -48,7 +47,18 @@ tbody tr:hover{
     border: 1px solid rgb(188, 188, 188);
 }
 
-
+.componentes-cards{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.componente-tables{
+    margin-top: 10px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+  }
 /* botones table */
 table td:nth-child(6){
     width: 150px;
@@ -100,16 +110,20 @@ table td:nth-child(6){
     cursor: pointer;
  }
  .btn-agregar a{
-    background-color: #7066e0;
+    background-color: #3B9AFF;
     font-size: 0.9rem;
     padding: 10px 12px;
     border-radius:3px ;
-   
+    box-shadow: 0px 0px 2px 2px rgba(94, 94, 94, 0.15);
  }
 
   .btn-buscar div{
-    border: 1px solid #7066e0;
+    border: 1px solid #3B9AFF;
     border-radius: 3px;
+    
+  }
+  .btn-buscar:active{
+    box-shadow: 0px 0px 2px 2px rgba(128, 0, 0, 0.15);
   }
  .btn-buscar input{
     outline: none;
@@ -120,7 +134,19 @@ table td:nth-child(6){
  }
  .btn-buscar button{
     border: none;
-    background-color: #7066e0;
+    background-color: #3B9AFF;
     padding: 5px 12px;
     color: white;
+ }
+
+
+ @media (max-width:562px){
+    .contenedor-btn-table {   
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+     }
+     .usuario_dropdown{
+        font-size: 12px;
+     }
  }

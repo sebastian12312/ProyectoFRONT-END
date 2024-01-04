@@ -37,3 +37,36 @@
    box-shadow: 0px 0px 10px 0px #FF4754;
    transition: 0.3s;
  }
+
+ /* color btns */
+ .btn-type-one{
+   background-color: #FF8C5E;
+   border-color: #FF8C5E;
+   border: 1px solid #FF8C5E;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   color: white;
+   outline: none;
+}
+.btn-type-two{
+   background-color: #2676ff;
+   border: 1px solid #2676ff;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   color: white;
+   outline: none;
+}
+.btn-type-two:hover{
+   color: white;
+   background-color: #16305e;
+   border: 1px solid #16305e;
+   transition: 0.3s;
+}
+/* tamano letra */
+.tamaño-type-one{
+   font-size: 1.3rem;
+}body {
+   min-width: 350px;
+}
